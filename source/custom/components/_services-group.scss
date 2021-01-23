@@ -1,0 +1,41 @@
+@mixin my-services-item-active {
+  background-color: $gray-900;
+  a {
+    color: $my-white;
+    text-decoration: none;
+  }
+  img {
+    filter: brightness(3);
+  }
+}
+
+.my-services-group {
+  height: 100px;
+  background: url('/images/bg/witamy-tlo.jpg') 50% 50% no-repeat;
+  @include media-breakpoint-up(lg) {
+    margin-right: -30px;
+  }
+}
+.my-services-item {
+  padding: 1rem 1.3rem 0;
+  text-align: center;
+
+  @include my-size(25%, 100%);
+  pointer-events: none;
+  &:hover {
+    @include my-services-item-active;
+    @include my-basic-transition;
+  }
+  a {
+    pointer-events: auto;
+  }
+}
+.my-services-item-title {
+  margin-top: 0.25rem;
+  @include my-font-light-secondary;
+  font-size: 0.6875rem;
+}
+
+.my-services-item-active {
+  @include my-services-item-active;
+}

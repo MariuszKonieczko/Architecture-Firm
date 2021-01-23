@@ -1,0 +1,39 @@
+.my-services-box {
+    margin-bottom: 40px;
+}
+
+.my-services-box-top {
+    margin: 1.4rem;
+}
+
+.my-services-box-img {
+    margin: 10px 20px 0 10px;
+    max-width: 86px;
+    max-height: 86px;
+    @include my-relative-zindex;
+}
+
+.my-services-box-title {
+    margin-top: 1.75rem;
+}
+
+.my-services-box-header {
+    font-size: 1.125rem;
+    line-height: 1.2;
+    @include my-font-light-secondary;
+}
+
+.my-services-box-text {
+    line-height: 2;
+}
+
+.my-services-box-shadow {
+    position: absolute;
+
+    background-color: rgba($my-black, .075);
+    @include my-size(85px, 85px);
+}
+
+.my-services-box-active {
+    background-color: rgba($my-accent-color, 1)
+}

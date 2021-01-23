@@ -1,0 +1,55 @@
+.my-product-item {
+    margin-bottom: 40px;
+    font-family: $my-font-family-secondary;
+}
+
+.my-product-item-link {
+    color: $my-gray-900;
+}
+
+.my-product-item-img {
+    width: 100%;
+    height: 192px;
+    margin-bottom: .75rem;
+    background-color: $gray-200;
+
+    &:hover {
+        background-color: darken($gray-200, 12%);
+        @include my-basic-transition;
+    }
+}
+
+.my-product-name {
+    margin-bottom: 0;
+    letter-spacing: .1rem;
+}
+
+.my-product-item-desc {
+    margin-bottom: .5rem;
+    font-weight: 300;
+}
+
+.my-product-price {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+
+.my-product-item-icons {
+    position: absolute;
+    top: .5rem;
+    right: 1.65rem;
+}
+
+.my-product-item-icon {
+    margin-bottom: .75rem;
+    background-color: $gray-900;
+    @include my-size(35px, 35px);
+
+}
+
+.my-product-item.active {
+    .my-product-item-img {
+        background-color: darken($gray-200, 12%);
+    }
+}

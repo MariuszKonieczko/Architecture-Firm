@@ -1,0 +1,47 @@
+.my-footer-top {
+  position: relative;
+  padding: 80px 0 20px;
+  background: url("/images/bg/footer-bg.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  &:after {
+    @include my-bg-overlay($my-black, 0.75);
+  }
+}
+.my-footer-top-content {
+  @include my-relative-zindex();
+}
+.my-footer-text {
+  font-size: 0.75rem;
+  color: $gray-600;
+}
+.my-footer-p {
+  line-height: 2;
+}
+my-footer-contact-list {
+  margin-bottom: 0.75rem;
+}
+.my-footer-contac-item {
+  padding: 0.2rem 0;
+}
+.my-social-box {
+  @include my-size(26px, 26px);
+}
+.my-newsletter-form-group {
+  margin-bottom: 0.7rem;
+}
+.my-newsletter-form-control {
+  height: 1.55rem;
+  font-size: 0.75rem;
+}
+.my-newsletter-btn {
+  padding: 0.25rem 1rem;
+  font-size: 0.625rem;
+}
+.my-copy {
+  padding: 1rem 0;
+  font-size: 0.625rem;
+}
+.my-copy-second {
+  margin-top: 0.25rem;
+  font-size: 0.5625rem;
+}

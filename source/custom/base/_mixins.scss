@@ -1,0 +1,32 @@
+@mixin my-bg-overlay($color, $opacity) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  z-index: 0;
+  background: none repeat $color;
+  opacity: $opacity;
+}
+
+@mixin my-relative-zindex {
+  position: relative;
+  z-index: 1000;
+}
+
+@mixin my-size($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin my-font-light-secondary {
+  font-weight: 300;
+  font-family: $my-font-family-secondary;
+}
+
+@mixin my-basic-transition {
+  transition: all 0.25s ease-in-out;
+}

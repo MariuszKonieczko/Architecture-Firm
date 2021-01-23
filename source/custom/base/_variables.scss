@@ -1,0 +1,53 @@
+$my-accent-color: #be8c6b;
+$my-gray-100: #f8f8f8;
+$my-gray-200: #eeeeee;
+$my-gray-600: #b7b7b7;
+$my-gray-800: #707070;
+$my-gray-900: #444444;
+$my-white: #ffffff;
+$my-black: #000000;
+$my-input-bg: #fcfcfc;
+$my-input-border-color: darken($my-gray-200, 3%);
+$my-contact-form-shadow: #292c31;
+$my-product-search-btn-color: #cccccc;
+
+$my-font-family-body: 'Lato';
+$my-font-family-secondary: 'Oswald';
+
+$theme-colors: (
+  'primary': $my-accent-color,
+);
+
+$gray-100: $my-gray-100;
+$gray-200: $my-gray-200;
+$gray-600: $my-gray-600;
+$gray-800: $my-gray-800;
+$gray-900: $my-gray-900;
+
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+
+$font-family-sans-serif: $my-font-family-body;
+$headings-font-family: $my-font-family-secondary;
+
+$headings-font-weight: 700;
+$font-size-base: 0.875rem;
+$font-size-sm: ($font-size-base * 0.75);
+$line-height-base: 1.75;
+$h2-font-size: 2.143rem;
+$h3-font-size: 1.375rem;
+$h4-font-size: 1rem;
+$h5-font-size: 0.875rem;
+
+$jumbotron-padding: 7rem;
+
+$input-group-addon-bg: $gray-800;
+$input-group-addon-border-color: none;
+$input-border-color: $my-input-border-color;
+
+$pagination-color: $gray-900;
+$pagination-bg: none;
+$pagination-border-width: 0;
+$pagination-hover-color: $my-accent-color;
+$pagination-hover-bg: none;

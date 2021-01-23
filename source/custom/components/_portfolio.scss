@@ -1,0 +1,49 @@
+.my-portfolio-box {
+  position: relative;
+}
+
+.my-portfolio-box-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 65%;
+  margin: 0 auto;
+  z-index: 1000;
+  transform: translateY(-50%);
+}
+
+.my-portfolio-box-title {
+  margin-bottom: 1.2rem;
+  font-size: 1.55rem;
+  letter-spacing: 0.2rem;
+}
+
+.my-portfolio-box-img,
+.my-portfolio-box.featured {
+  max-width: 800px;
+}
+
+.my-portfolio-img-overlay {
+  &:after {
+    @include my-bg-overlay($my-accent-color, 0.8);
+  }
+}
+
+.my-portfolio-item {
+  position: relative;
+  margin-bottom: 1.875rem;
+
+  .my-hr {
+    margin: 1rem 0;
+  }
+}
+
+.my-portfolio-item-info {
+  @include my-font-light-secondary;
+}
+
+.my-portfolio-box-header {
+  font-size: 1.125rem;
+  letter-spacing: 0.2rem;
+}

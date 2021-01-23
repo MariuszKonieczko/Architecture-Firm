@@ -1,0 +1,79 @@
+.my-post-box {
+    position: relative;
+}
+
+.my-post-box-date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    @include my-size(75px, 75px);
+
+    @include media-breakpoint-up(md) {
+        @include my-size(95px, 95px);
+    }
+}
+
+.my-post-box-date-body {
+    max-width: 90%;
+
+    @include media-breakpoint-up(md) {
+        max-width: 45%;
+    }
+}
+
+.my-post-box-date-value {
+    font-size: 0.625rem;
+    margin-top: .3rem;
+    @include my-font-light-secondary;
+}
+
+.my-post-box-body,
+.my-post-box-img {
+    position: relative;
+    padding: 5px 0 0 5px;
+}
+
+.my-post-box-content {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    bottom: 0;
+    left: 10px;
+    padding: 20px 30px;
+
+
+
+    &:after {
+        @include my-bg-overlay($my-black, 0.6)
+    }
+
+    @include media-breakpoint-up(md) {
+        top: 40%;
+        max-width: 531px;
+    }
+}
+
+.my-post-box-content-inner {
+    @include my-relative-zindex;
+
+}
+
+.my-post-box-title {
+    font-size: 1.375rem;
+    margin-bottom: .85rem;
+
+
+}
+
+.my-post-box-text {
+    margin-bottom: 0.3rem;
+    line-height: 1.66;
+
+
+}
+
+.my-post-box-link {
+    font-size: .625rem;
+    @include my-font-light-secondary;
+}
